@@ -1,0 +1,379 @@
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+/* HTML BASES */
+
+body {
+  overflow: hidden;
+}
+
+.container-midmid {
+   margin-top: 60px;
+}
+
+
+/* Sidebar */
+#sidebar-wrapper{
+  z-index:1;
+  position: absolute;
+  width:0;
+  height:100%;
+  overflow-y:hidden;
+  background-color:rgba(245, 245, 245, 0.123);
+  opacity: 80%;
+  opacity:0.9;
+	transition:all 0.6s;
+ 	display:flex;
+}
+
+/* Main Content */
+#page-content-wrapper{
+  width: 100%;	
+  position: absolute;
+  padding:15px;
+	transition:all .5s;
+}
+
+#menu-toggle{
+	transition:all .3s;
+  font-size:30px;
+  color: whitesmoke;
+}
+/* Change the width of the sidebar to display it*/
+#wrapper.menuDisplayed #sidebar-wrapper{
+  width:250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper{
+  padding-left:250px;
+}
+
+/* Sidebar styling */
+.sidebar-nav{
+  padding:0;
+  list-style:none; 
+	transition:all .5s;
+	width:100%;
+  text-align:center;
+  font-size: 18px;
+  margin-top: 200px ;
+}
+
+.sidebar-nav li{
+  line-height:40px;  
+	width:100%;
+	transition:all .3s;
+	padding:10px;
+}
+
+.sidebar-nav li a {
+  display:block;
+  text-decoration:none;
+  color:#ddd;
+}
+
+.sidebar-nav li:hover{
+  background-color: rgb(72, 130, 218);
+
+
+
+}
+
+#imgtop {
+  max-width: 120px;
+  max-height: 80px ;
+}
+
+body {
+  background-image: url("img/bg2.png");
+  color: white;
+}
+
+/* butao navbar search */
+
+.btn-light {
+  width: 80px;
+  height: 30px;
+  background-color: grey;
+}
+
+/* input search */
+.mr-sm-2 {
+  height: 35px;
+  opacity: 80%;
+}
+
+/* stuff do fundo (nomes e UA) */
+
+.bottomsidebar {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+#textofundo {
+  opacity: 50%;
+}
+
+#uaimg {
+  max-height: 50px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+
+
+/* Checkboxes style */
+
+
+.mb-30 {
+  margin-bottom: 30px
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 0px solid #d2d2dc;
+  border-radius: 0;
+  background-color: transparent;
+  margin-top: 60px;
+}
+
+.card .card-body {
+  padding: 1.25rem 1.75rem
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+.card .card-title {
+  color: #ffffff;
+  margin-bottom: 0.625rem;
+  text-transform: capitalize;
+  font-size: 20px;
+
+}
+
+.card .card-description {
+  margin-bottom: .875rem;
+  font-weight: 400;
+  color: #76838f
+}
+
+
+label.check {
+  cursor: pointer;
+  padding: 4px;
+}
+
+label.check input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none
+}
+
+label.check span {
+  padding: 7px 14px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  color: #fffffffb;
+  border-radius: 3px;
+  font-size: 14px;
+  text-transform: uppercase
+}
+
+label.check input:checked+span {
+  border-color: #13145e;
+  background-color: #2731bb;
+  color: #fff
+}
+
+#textofundo {
+  opacity: 50%;
+}
+
+#uaimg {
+  max-height: 50px;
+  align-items: center;
+  align-self: center;
+  width: 220px;
+}
+
+
+
+/* Checkboxes style */
+
+
+.mb-30 {
+  margin-bottom: 30px
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 0px solid #d2d2dc;
+  border-radius: 0;
+  background-color: transparent;
+  margin-top: 60px;
+}
+
+.card .card-body {
+  padding: 1.25rem 1.75rem
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+.card .card-title {
+  color: #ffffff;
+  margin-bottom: 0.625rem;
+  text-transform: capitalize;
+  font-size: 20px;
+
+}
+
+.card .card-description {
+  margin-bottom: .875rem;
+  font-weight: 400;
+  color: #76838f
+}
+
+
+label.check {
+  cursor: pointer;
+  padding: 4px;
+}
+
+label.check input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none
+}
+
+label.check span {
+  padding: 7px 14px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  color: #fffffffb;
+  border-radius: 3px;
+  font-size: 14px;
+  text-transform: uppercase
+}
+
+label.check input:checked+span {
+  border-color: #13145e;
+  background-color: #2731bb;
+  color: #fff
+}
+
+
+#textofundo {
+  opacity: 50%;
+}
+
+#uaimg {
+  max-height: 50px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+
+
+/* Checkboxes style */
+
+
+.mb-30 {
+  margin-bottom: 30px
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 0px solid #d2d2dc;
+  border-radius: 0;
+  background-color: transparent;
+  margin-top: 60px;
+}
+
+.card .card-body {
+  padding: 1.25rem 1.75rem
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+.card .card-title {
+  color: #ffffff;
+  margin-bottom: 0.625rem;
+  text-transform: capitalize;
+  font-size: 20px;
+
+}
+
+.card .card-description {
+  margin-bottom: .875rem;
+  font-weight: 400;
+  color: #76838f
+}
+
+
+label.check {
+  cursor: pointer;
+  padding: 4px;
+}
+
+label.check input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none
+}
+
+label.check span {
+  padding: 7px 14px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  color: #fffffffb;
+  border-radius: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+label.check input:checked+span {
+  border-color: #13145e;
+  background-color: #2731bb;
+  color: #fff
+}
+
+/* Parte da modal box */
+
+#login, #signup {
+   color: whitesmoke;
+}
